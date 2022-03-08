@@ -24,8 +24,8 @@ while(start <= end):
         end = mid - 1
     # 떡볶이 양이 충분한 경우 덜 자르기 (왼쪽 부분 탐색)
     else:
-        result = mid # 최대한 덜 잘랐을 때가 정답이므로, 여기에서 result에 기록
-        start = mid + 1
+        result = mid # 최대한 덜 잘랐을때가 정답이므로, 일단 result에 기록
+        start = mid + 1 #최적의 해인지 찾기위해 탐색은 지속, start > end (이진정렬 종료조건) 때까지
 
 # 정답 출력
 print(result)
