@@ -48,7 +48,7 @@ from collections import deque
 
 queue = deque()
 
-# queue를 리스트로 이용 시
+-- queue를 리스트로 이용 시
 list(queue)
 """
 삽입 - append() / 삭제 - popleft()
