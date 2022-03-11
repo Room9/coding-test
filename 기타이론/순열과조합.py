@@ -1,5 +1,5 @@
 
-# 순열, 순서고려하지 않음
+# 순열, 순서고려하여
 
 import itertools
 
@@ -10,12 +10,12 @@ for x in itertools.permutations(data, 2):
 
 # -------
 
-# 조합, 순서고려하여
+# 조합, 순서고려하지 않음
 
 from itertools import combinations
 
 vowels = ('a', 'e', 'i', 'o', 'u') # 5개의 모음 정의
-l, c = map(int, input().split(' '))
+l, c = map(int, input().split(' ')) # l : 조합할 갯수
 
 # 가능한 암호를 사전식으로 출력해야 하므로 입력 이후에 정렬 수행
 array = input().split(' ')

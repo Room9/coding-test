@@ -1,4 +1,15 @@
 
+# deque
+from collections import deque
+
+d =deque(list)
+d.popleft()
+d.pop()
+d.appendleft()
+d.append
+
+# 반복문 종료조건을 무엇으로 설정할지가 매우 중요하다
+while (종료조건) :
 
 
 ################

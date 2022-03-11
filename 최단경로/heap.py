@@ -1,4 +1,6 @@
 # 이진트리 기반의 최소힙 라이브러리
+# 모든 부모 노드는 그의 자식 노드보다 값이 작거나 큰 이진트리(binary tree) 구조인데, 
+# 내부적으로는 인덱스 0에서 시작해 k번째 원소가 항상 자식 원소들(2k+1, 2k+2) 보다 작거나 같은 최소 힙의 형태로 정렬된다.   
 import heapq 
 
 list = [4,2,7,9,1]
@@ -12,8 +14,8 @@ heapq.heappop(heap)
 import heapq 
 
 list = [4,2,7,9,1]
-list = list * -1
-heap = heapq.heapify(list)
+list = list(map(lambda x : x*-1,list))
+heapq.heapify(list)
 
 while heap:
     heapq.heappop(heap)*-1

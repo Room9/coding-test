@@ -20,20 +20,24 @@ print(sequential_search(n, target, array))
 
 ################
 
-## 이진 탐색 소스코드 구현 (반복문)
+## 이진 탐색 소스코드 구현 (반복문) - 매우 중요!!!!! 여기서 변형한다.
+## 1. 이진탐색 범위를 결정하여 start, end 간 while 조건문 결정한다
+## 2. 중간 탐색값 결정 3. target 값 결정 
+## 4. 중간탐색값과 target값이 같을 때/ 클 때/ 작을 때 상황을 고려하여 start, end값을 보정한다
+## 5. (필요 시) while 반복문 내 답 못찾을 시, 답 없음으로 return한다
 def binary_search(array, target, start, end):
-    while start <= end:
-        mid = (start + end) // 2
+    while start <= end: #1
+        mid = (start + end) // 2 #2
         # 찾은 경우 중간점 인덱스 반환
-        if array[mid] == target:
+        if array[mid] == target: #3,4
             return mid
         # 중간점의 값보다 찾고자 하는 값이 작은 경우 왼쪽 확인
-        elif array[mid] > target:
+        elif array[mid] > target: #3,4
             end = mid - 1
         # 중간점의 값보다 찾고자 하는 값이 작은 경우 오른쪽 확인
         else:
-            start = mid + 1
-    return None
+            start = mid + 1 #3,4
+    return None #5
 
 # N(가게의 부품 개수) 입력
 n = int(input())
