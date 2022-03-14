@@ -1,4 +1,4 @@
-# DFS 함수 정의
+# DFS 함수 정의, STACK 사용
 def dfs(graph, start, visited):
     # 현재 노드를 방문 처리
     visited[start] = True
