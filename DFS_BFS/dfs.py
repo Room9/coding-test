@@ -107,3 +107,37 @@ dfs(graph, 1, visited)
 
 # return 예시 형식
 [['A', 'B', 'E', 'H'], ['A', 'C', 'F', 'H']]
+
+
+#############
+
+# 백트래킹 : 더 이상 갈 수 있는 길이 없을 때 빠르게 포기 
+# + 진행 경로까지 확인
+
+def solution(tickets):
+    # tickets을 dict형태 graph로 변환
+    routes = {}
+    for t in tickets:
+        routes[t[0]] = routes.get(t[0], []) + [t[1]]
+    for r in routes:
+        routes[r].sort(reverse=True)
+
+    # stack 초기값 설정
+    # 진행 path 초기값 설정
+    stack = ["ICN"]
+    path = []
+
+    while len(stack) > 0:
+        # stack에서 last out하고
+        top = stack[-1]
+
+        # 더 이상 갈 경로가 없는 조건일 때 stack에서 pop하여 path로 넣음
+        if top not in routes or len(routes[top]) == 0:
+            path.append(stack.pop())
+        # 더 깊이 탐색할 곳 확인하여 stack에 쌓으면서, dict의 밸류값에서 빼주면서 visit처리 대체
+        else:
+            stack.append(routes[top][-1])
+            routes[top] = routes[top][:-1]
+    return path[::-1]
+
+

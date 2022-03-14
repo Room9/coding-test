@@ -1,4 +1,8 @@
 
+# (중요) 모두 연결되는 길이 반드시 있다는 조건 
+# -> 1자로 쭉 펼 수 있으므로, 가장 끝 단이 확인될 때마다 path에 넣어주면 된다!!!
+# a -> b 와 b -> a 가 모두 존재함을 고려하여 node별 방문처리가 아닌 경로 별 방문처리 필요
+
 # 여행경로 1
 from collections import defaultdict
 
@@ -20,7 +24,7 @@ def solution(tickets):
     return p[::-1]
 
 
-# 여행경로 2
+# (중요) 여행경로 2
 
 def solution(tickets):
     routes = {}
