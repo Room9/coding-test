@@ -59,17 +59,19 @@ def stack_dfs(start_vertex):
 					stack.append(item)
 	return visited
 
-  ##################3
+##################3
   # DFS, 개별 경로 확인
+
+https://juhee-maeng.tistory.com/25 확인
 
 paths = []
 
 def dfs_paths(graph, start, end, visited=[]):
     # 그 전에 방문했던 노드들을 기록하고
     # 이번 차례 방문하는 노드를 새로 추가한다.
-    # (중요) append와 +[]의 차이는 
-    # +[]는 visited가 재귀를 거치면서 개별 주소를 참조하여 따로 list취급
-    # .append는 visited가 재귀를 거치면서 동일 주소 참조하여 동일 list에 쌓임
+    # (중요) 1. append와 +[]의 차이는? 2. visited = dfs()과 그냥 dfs()의 차이는?
+    # +[]는 visited가 재귀를 거치면서 개별 주소를 참조하여 따로 list 취급됨
+    # .append는 visited가 재귀를 거치면서 동일 주소 참조하여 동일 list에 쌓임, 기억하며 쌓인다
     visited = visited + [start] 
     
     #도착할 경우, paths에 경로를 기록한다.
