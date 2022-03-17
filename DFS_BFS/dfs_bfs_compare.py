@@ -11,8 +11,7 @@ def bfs(graph, start_node):
             queue.extend(graph[node])
 
     return visit
-
-
+    
 def dfs(graph, start_node):
     visit = list()
     stack = list()

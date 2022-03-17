@@ -10,6 +10,8 @@ for i in range(len(array)):
 
 print(array)
 
+#################3
+
 # 삽입정렬
 array = [7, 5, 9, 0, 3, 1, 6, 2, 4, 8]
 
@@ -21,6 +23,8 @@ for i in range(1, len(array)):
             break
 
 print(array)
+
+#################
 
 # 퀵정렬
 array = [5, 7, 9, 0, 3, 1, 6, 2, 4, 8]

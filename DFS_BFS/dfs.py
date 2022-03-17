@@ -59,7 +59,7 @@ def stack_dfs(start_vertex):
 					stack.append(item)
 	return visited
 
-##################3
+##################
   # DFS, 개별 경로 확인
 
 https://juhee-maeng.tistory.com/25 확인

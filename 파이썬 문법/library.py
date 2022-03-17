@@ -1,3 +1,10 @@
+# 집합(set)
+a = {}
+b= {}
+
+a.add(b) : a u b
+a.intersect(b) : a n b
+
 
 # deque
 from collections import deque
@@ -22,6 +29,14 @@ collections.Counter(list)
 
 # dict에서 특정 key 제거 시
 dict.pop('key')
+
+# dict에 없는 key가 들어오면 default로 key 생성하겠다
+defaultdict(list)
+
+# get함수는 선언된 dict에서 출력하고자 하는 key가 있으면, 그에 해당하는 value를 출력해줍니다.
+# 또한, 출력하고자 하는 key가 없으면, 오류가 아닌 None을 출력합니다.
+value = dict.get(key)
+
 
 ################
 
