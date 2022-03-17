@@ -5,6 +5,8 @@ b= {}
 a.add(b) : a u b
 a.intersect(b) : a n b
 
+sett = {a,b}
+
 
 # deque
 from collections import deque
@@ -37,6 +39,7 @@ defaultdict(list)
 # 또한, 출력하고자 하는 key가 없으면, 오류가 아닌 None을 출력합니다.
 value = dict.get(key)
 
+dic = {key:value}
 
 ################
 
