@@ -233,3 +233,14 @@ https://mizykk.tistory.com/121
 - 순위함수 : row_number / rank / dense_rank
 - 데이터위치바꾸기 : LAG() / LEAD()
 - Ntile
+
+[sql function 만들기]
+https://wakestand.tistory.com/503
+
+함수 정의 : create function / 인수 정의 : (인수 type) / 결과값 정의 : type
+함수 로직 시작 : BEGIN / 함수 로직 끝 : END
+
+1. RETURN(query) 방식으로 리턴하기
+2. RETURN 할 변수를 decalre 하고, 
+SELECT ~ INTO 변수 FROM(서브쿼리) 형식으로 변수에 쿼리결과값 넣어주고
+RETURN 변수 설정
