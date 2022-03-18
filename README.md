@@ -225,12 +225,19 @@ https://developer-mac.tistory.com/84
 모듈러 합동
 (a mod n +-* b mod n) mod n = (a +-* b) mod n
 
+[링크드리스트]
+https://daeun-computer-uneasy.tistory.com/20
+
+class Node() 이용
+객체명 = Node(value, next) 
+
 12. SQL
 [window 함수]
 https://mizykk.tistory.com/121
 
 - 집계함수 : sum / max / min / avg / count
 - 순위함수 : row_number / rank / dense_rank
+예시 : SELECT name, RANK() OVER (Partition by name ORDER BY salary) AS salary_rank FROM Salary WHERE salary_rank=1;
 - 데이터위치바꾸기 : LAG() / LEAD()
 - Ntile
 
