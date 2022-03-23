@@ -6,6 +6,12 @@ def solution(S):
     # write your code in Python 3.6
     
     S = list(S)
+    
+    #### 1부터 시작하게 아래와 같이 추가하면 효율성 증가
+    t = S.index(1)
+    S = S[t:]
+    ####
+
     s = set(S)
     count = 0
 
