@@ -251,3 +251,11 @@ https://wakestand.tistory.com/503
 2. RETURN 할 변수를 decalre 하고, 
 SELECT ~ INTO 변수 FROM(서브쿼리) 형식으로 변수에 쿼리결과값 넣어주고
 RETURN 변수 설정
+
+[Null 처리]
+https://velog.io/@gillog/DB-MySQL-NULL-%EC%B2%98%EB%A6%ACIFNULL-CASE-COALESCE
+
+[DATETIME, String 처리]
+날짜 포맷 맞추기 : date_format(data, format)
+https://lightblog.tistory.com/155
+예시) date_format(DATETIME, '%Y-%m-%d')
