@@ -1,7 +1,15 @@
+# heap
+# heap은 최소값이나 최대값만을 찾기위한 자료구조 : 부모 자식노드의 관계를 정립해 만듬
+# 이진정렬트리는 좌노드는 작고 우노드는 크도록 정렬 : 좌우노드의 관계를 정립해 만듬
+
+
 # 비트연산자
+https://codetorial.net/python/operators/bitwise_operator.html
+
+# i와 j는 십진수, 비트연산자는 십진수끼리 비트처럼 계산해서 십진수를 리턴하는 것
 
 i << 1 , i >> 1 : 2진수로 생각할 때, 2배 혹은 1/2배
-i^j : XOR
+i^j : XOR # (서로 다를 때만 참)
 i&j : AND
 i|j : OR
 
