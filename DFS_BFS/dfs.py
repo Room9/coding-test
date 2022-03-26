@@ -46,7 +46,8 @@ visited = [False] * 9
 dfs(graph, 1, visited)
 
 
-####################
+###########################################
+
 # DFS, 반복문 사용
 def stack_dfs(start_vertex):
 	visited = []
