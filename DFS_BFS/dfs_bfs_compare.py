@@ -5,7 +5,7 @@ def bfs(graph, start_node):
     queue.append(start_node)
 
     while queue:
-        node = queue.pop(0)
+        node = queue.popleft()
         if node not in visit:
             visit.append(node)
             queue.extend(graph[node])

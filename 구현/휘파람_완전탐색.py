@@ -1,3 +1,5 @@
+# runtime error..하..., string 최대 20만개 조건
+
 
 import sys, math
 
