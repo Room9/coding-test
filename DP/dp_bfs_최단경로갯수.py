@@ -36,8 +36,8 @@ def solution(m, n, puddles):
 # 2 재귀사용하면서 (x,y)를 key로 이용한 memozation 실행
 def solution(m, n, puddles):
     answer = 0
-    # a.한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 dict 초기화
-    #  b. 메모 초기값 설정
+    #  a.한 번 계산된 결과를 메모이제이션(Memoization)하기 위한 dict 초기화
+    #  b.메모 초기값 설정
     info = dict([((2, 1), 1), ((1, 2), 1)])
     for puddle in puddles:
         info[tuple(puddle)] = 0
